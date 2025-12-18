@@ -1,5 +1,4 @@
-
-#Relatório de Desenvolvimento/Participacao em Projeto de Braco Robotico Modular com Visao Computacional
+# Relatório de Desenvolvimento/Participacao em Projeto de Braco Robotico Modular com Visao Computacional
 
 **Data do Relatório:** 16 de Dezembro de 2025 
 
