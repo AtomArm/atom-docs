@@ -1,7 +1,7 @@
 # Relatório de Desenvolvimento/Participacao em Projeto de Braco Robotico Modular com Visao Computacional
 
 **Data do Relatório:** 16 de Dezembro de 2025 
-
+**Data de Término:** 31 de Dezembro de 2025 
 ---
 
 ## Tarefas Realizadas
