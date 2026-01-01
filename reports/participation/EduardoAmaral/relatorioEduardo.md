@@ -1,10 +1,9 @@
 # Relatório de Desenvolvimento/Participação em Projeto de Braço Robótico Modular com Visão Computacional
 
-**Data do Relatório:** 16 de dezembro de 2025  
+**Data do Relatório:** 31 de dezembro de 2025  
 - **Período:** Maio de 2025 a Dezembro de 2025  
-- **Função:** Desenvolvedor de Software e Pesquisador  
+- **Função:** Desenvolvedor de Software, Mecânico Montador e Pesquisador  
 - **Responsável:** Eduardo do Amaral Melo Pereira  
-**Data de Término:** 31 de dezembro de 2025  
 
 ---
 
@@ -38,13 +37,13 @@
    - **Responsável:** Eduardo do Amaral Melo Pereira  
    - **Término:** 05 de novembro de 2025  
    - **Descrição:**  
-     Desenvolvimento do código base responsável pelo controle dos movimentos do braço robótico. O código permitiu o acionamento inicial dos motores, execução de movimentos básicos e testes de repetibilidade, servindo como fundação para futuras melhorias no controle e automação do sistema.
+     Desenvolvimento do código base responsável pelo controle dos movimentos do braço robótico. O código permitiu o acionamento inicial dos motores, execução de movimentos básicos e testes de repetibilidade, servindo para apresentação inical do braço robótico e como fundação para futuras melhorias no controle e automação do sistema.
 
 6. **Estudos em Linguagem C++ aplicada à Visão Computacional**
    - **Responsável:** Eduardo do Amaral Melo Pereira  
    - **Término:** 23 de dezembro de 2025  
    - **Descrição:**  
-     Realização de estudos aprofundados sobre a linguagem de programação C++, com foco em sua aplicação na área de visão computacional. Essa atividade teve como objetivo compreender melhor aspectos de desempenho, gerenciamento de memória e uso da linguagem em sistemas de processamento de imagens.
+     Realização de estudos aprofundados sobre a linguagem de programação C++, com foco em sua aplicação na área de visão computacional, com base no livro "Effective Modern C++". Essa atividade teve como objetivo compreender melhor aspectos de desempenho, gerenciamento de memória e uso da linguagem em sistemas de processamento de imagens.
 
 7. **Desenvolvimento de Texto Técnico sobre Linguagem C++ para Artigo Científico**
    - **Responsável:** Eduardo do Amaral Melo Pereira  
