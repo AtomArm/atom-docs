@@ -83,10 +83,27 @@
 
 ---
 
-## 3. Justificativa Arquitetural
+## 3. Justificativas
+
+### Justificativa do projeto
+
+O ATOM Chess é uma continuação do Projeto [ATOM Laboratory](https://github.com/Atom-Laboratory/), desenvolvido pelo Grupo de Iniciação Científica em Robótica e Visão Computacional do Centro Universitário Dom Helder Câmara em 2025. No primeiro ano, o grupo concentrou-se no projeto ATOM InMoov, cujo objetivo foi o desenvolvimento de um braço robótico humanoide para manipulação de objetos. Como resultado, foi construído um protótipo funcional, além da realização de estudos em visão computacional e da elaboração de um artigo científico atualmente em processo de submissão para a Revista Eletrônica de Iniciação Científica da Sociedade Brasileira de Computação.
+
+Dando continuidade a essa linha de pesquisa, o ATOM Chess tem como objetivo o desenvolvimento de um robô manipulador especializado para jogar xadrez. O projeto aproveita os conhecimentos adquiridos durante a construção do braço robótico humanoide e os aplica em um sistema projetado especificamente para interagir com um tabuleiro de xadrez físico.
+
+O foco técnico do projeto está na aplicação integrada de cinemática robótica, controle de movimento e visão computacional. O sistema deverá ser capaz de reconhecer automaticamente o estado do tabuleiro, identificar as peças e executar movimentos precisos para realizar as jogadas. Além da construção do hardware, o projeto envolve o desenvolvimento de algoritmos de percepção visual, planejamento de movimento e tomada de decisão, permitindo que o robô jogue xadrez de forma autônoma contra um oponente humano ou outro sistema de inteligência artificial.
+
+O ATOM Chess também possui um caráter acadêmico e formativo. O projeto busca ampliar a experiência prática dos estudantes em robótica, visão computacional e inteligência artificial, ao mesmo tempo em que contribui para a produção científica do grupo. Entre os resultados esperados estão a publicação de artigos científicos, o desenvolvimento de projetos de extensão e a participação em eventos e competições acadêmicas relacionadas à robótica e sistemas inteligentes.
+
+### Justificativa Arquitetural
 
 * **Cinemática e Mecânica Estrutural**: A adoção de guias lineares retificados (SAE 1045 H7) combinados com rolamentos LM10UU garante uma cinemática de alta precisão, minimizando folgas (backlash) e atrito nas partes móveis do manipulador ATOM Chess. O uso de fusos axiais provê resolução mecânica adequada para deslocamentos no eixo Z (vertical), suportando as cargas dinâmicas exigidas.
 * **Processamento e Potência (Eletrônica)**: A arquitetura propõe um isolamento de domínios. A fonte SMPS (12V/10A) dimensiona corretamente as correntes de pico exigidas pelos 6 motores de passo NEMA 17 e pelos servos de alto torque (MG996R). O processamento de alto nível (Lógica de Xadrez e Visão Computacional) é encabeçado pelo Banana Pi M5/Raspberry Pi Zero 2 W, garantindo *throughput* suficiente para algoritmos complexos.
 * **Sinalização e Malha de Controle**: A integração do driver PCA9685 via barramento I2C desafoga os loops de controle das SBCs, permitindo modulação PWM via hardware com alta estabilidade para os servos. Conversores de nível lógico e o módulo ESP32 asseguram o interfaceamento seguro entre lógicas de 3.3V e 5V. A inclusão da IMU MPU-6050 e sensores ACS712 formam a telemetria do sistema, monitorando o comportamento espacial do robô e o consumo de corrente para identificação de falhas ou detecção de travamentos (*stall detection*).
 
 * **Insumos e Materiais**: A escolha de filamento PLA para manufatura aditiva é justificada pela facilidade de impressão, baixo custo e adequação para prototipagem funcional. O acrílico cast de 3mm é selecionado para a construção de componentes estruturais secundários, oferecendo boa rigidez e acabamento estético.
+
+
+# Assinaturas:
+
+________
