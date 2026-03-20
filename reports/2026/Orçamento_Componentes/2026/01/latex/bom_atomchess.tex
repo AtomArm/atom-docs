@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
+
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{array}
@@ -11,7 +12,6 @@
 \geometry{margin=2.5cm}
 
 \usepackage{tabularx}
-\usepackage{makecell}
 \usepackage{ragged2e}
 
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
@@ -19,17 +19,25 @@
 \begin{document}
 
 \begin{center}
-    \includegraphics[width=0.2\textwidth]{../images/images.png}
 
-    \vspace{0.5cm}
+\includegraphics[width=0.2\textwidth]{../images/images.png}
 
-    {\Large \textbf{Centro Universitário Dom Helder Câmara}}\\
-    {\normalsize Curso de Ciência da Computação}\\
-    {\normalsize Grupo de Iniciação Científica em Robótica e Visão Computacional}
+\vspace{0.5cm}
 
-    \vspace{1cm}
+{\Large \textbf{Centro Universitário Dom Helder Câmara}}
 
-    {\LARGE \textbf{Bill of Materials (BOM) -- Projeto ATOM CHESS}}
+{\normalsize Curso de Ciência da Computação}
+
+{\normalsize Grupo de Iniciação Científica em Robótica e Visão Computacional}
+
+\vspace{1cm}
+
+{\Large \textbf{ATOM Laboratory}}
+
+\vspace{0.5cm}
+
+{\LARGE \textbf{Bill of Materials (BOM) -- Projeto ATOM CHESS}}
+
 \end{center}
 
 \hrule
@@ -39,61 +47,62 @@
 
 \subsection{Componentes Mecânicos (Estrutura e Cinemática)}
 
-\begin{table}[h]
-\centering
+\begin{center}
 \small
 \begin{tabularx}{\textwidth}{c Y c c c Y}
+
 \toprule
 Código & Componente & Qtd. & V. Unit. (R\$) & V. Total (R\$) & Referência \\
 \midrule
-MC001 & Guia Linear Retificado SAE 1045 H7 10x400mm & 4 & 30,00 & 120,00 &
-\href{https://www.mercadolivre.com.br}{Mercado Livre} \\
 
-MC002 & Rolamento 608ZZ 8x22x7mm & 4 & 5,00 & 20,00 &
-\href{https://www.mercadolivre.com.br}{Mercado Livre} \\
+MC001 & Guia Linear Retificado SAE 1045 H7 10x400mm & 4 & 30,00 & 120,00 & Mercado Livre \\
 
-MC003 & Rolamento Axial de Esferas 51108 40x60x13mm & 1 & 30,00 & 30,00 &
-\href{https://www.mercadolivre.com.br}{Mercado Livre} \\
+MC002 & Rolamento 608ZZ 8x22x7mm & 4 & 5,00 & 20,00 & Mercado Livre \\
 
-MC004 & Rolamento Axial de Esferas 51107 35x52x12mm & 2 & 25,00 & 50,00 &
-\href{https://www.mercadolivre.com.br}{Mercado Livre} \\
+MC003 & Rolamento Axial de Esferas 51108 40x60x13mm & 1 & 30,00 & 30,00 & Mercado Livre \\
 
-MC005 & Rolamento Linear LM10UU 10mm & 4 & 20,00 & 80,00 &
-\href{https://www.mercadolivre.com.br}{Mercado Livre} \\
+MC004 & Rolamento Axial de Esferas 51107 35x52x12mm & 2 & 25,00 & 50,00 & Mercado Livre \\
+
+MC005 & Rolamento Linear LM10UU 10mm & 4 & 20,00 & 80,00 & Mercado Livre \\
 
 \midrule
 \multicolumn{4}{r}{Subtotal Parcial} & \textbf{R\$ 300,00} & \\
 \bottomrule
+
 \end{tabularx}
-\end{table}
+\end{center}
 
 \subsection{Componentes Mecânicos (Fixação e Elementos de Máquina)}
 
 \textit{Nota: Itens consolidados em lote abrangendo fuso axial, parafusos, arruelas e porcas.}
 
-\begin{table}[h]
-\centering
+\begin{center}
 \small
-\begin{tabularx}{\textwidth}{l l l l l}
+\begin{tabularx}{\textwidth}{c Y c c c}
+
 \toprule
 Código & Componente & Qtd. & V. Unit. (R\$) & V. Total (R\$) \\
 \midrule
+
 FIX-LOTE & Kit de Fixação e Fuso Axial & 1 & 100,00 & 100,00 \\
+
 \midrule
 \multicolumn{3}{r}{Subtotal Parcial} & & \textbf{R\$ 100,00} \\
 \bottomrule
+
 \end{tabularx}
-\end{table}
+\end{center}
 
 \subsection{Eletrônica de Potência, Atuadores e Processamento}
 
-\begin{table}[h]
-\centering
+\begin{center}
 \small
-\begin{tabularx}{\textwidth}{l l l l l l}
+\begin{tabularx}{\textwidth}{c Y c c c Y}
+
 \toprule
 Código & Componente & Qtd. & V. Unit. (R\$) & V. Total (R\$) & Referência \\
 \midrule
+
 EL001 & Fonte SMPS 12V 10A 120W & 1 & 150,00 & 150,00 & Mercado Livre \\
 EL005 & Fonte Auxiliar 12V 2A & 1 & 18,00 & 18,00 & Mercado Livre \\
 EL002 & Micro Switch KW117 & 6 & 4,00 & 24,00 & Mercado Livre \\
@@ -103,99 +112,142 @@ EL007 & Driver A4988 & 6 & 10,00 & 60,00 & Mercado Livre \\
 EL006 & SBC Banana Pi M5 & 1 & 500,00 & 500,00 & A definir \\
 EL008 & SBC Raspberry Pi Zero 2 W & 1 & 150,00 & 150,00 & Mercado Livre \\
 EL009 & T-GPIO Raspberry Pi & 1 & 100,00 & 100,00 & Eletrogate \\
+
 \midrule
 \multicolumn{4}{r}{Subtotal Parcial} & \textbf{R\$ 1.402,00} & \\
 \bottomrule
+
 \end{tabularx}
-\end{table}
+\end{center}
 
 \subsection{Aquisição de Sinais, Controle e Telemetria}
 
-\begin{table}[h]
-\centering
+\begin{center}
 \small
-\begin{tabularx}{\textwidth}{l l l l l l}
+\begin{tabularx}{\textwidth}{c Y c c c Y}
+
 \toprule
 Código & Componente & Qtd. & V. Unit. (R\$) & V. Total (R\$) & Referência \\
 \midrule
+
 EL010 & Sensor de Corrente ACS712 & 1 & 20,00 & 20,00 & Mercado Livre \\
 EL011 & Level Shifter I2C & 2 & 20,00 & 40,00 & Mercado Livre \\
 EL012 & Conversor USB-TTL CH340G & 1 & 15,00 & 15,00 & Mercado Livre \\
 EL013 & Driver PWM PCA9685 & 1 & 50,00 & 50,00 & Mercado Livre \\
 EL014 & ESP32 DevKitC V4 & 1 & 120,00 & 120,00 & Mercado Livre \\
 EL015 & IMU MPU-6050 & 1 & 30,00 & 30,00 & Eletrogate \\
+
 \midrule
 \multicolumn{4}{r}{Subtotal Parcial} & \textbf{R\$ 275,00} & \\
 \bottomrule
+
 \end{tabularx}
-\end{table}
+\end{center}
 
 \subsection{Insumos e Materiais de Fabricação}
 
-\begin{table}[h]
-\centering
+\begin{center}
 \small
-\begin{tabularx}{\textwidth}{l l l l l}
+\begin{tabularx}{\textwidth}{c Y c c c}
+
 \toprule
 Código & Componente & Qtd. & V. Unit. (R\$) & V. Total (R\$) \\
 \midrule
-OT001 & Filamento PLA (1kg) & 3 & 80,00 & 240,00 \\
+
+OT001 & Filamento PLA para Manufatura Aditiva (1kg) & 3 & 80,00 & 240,00 \\
 OT002 & Placa de Acrílico Cast 3mm & 1 & 100,00 & 100,00 \\
+
 \midrule
 \multicolumn{3}{r}{Subtotal Parcial} & & \textbf{R\$ 340,00} \\
 \bottomrule
+
 \end{tabularx}
-\end{table}
+\end{center}
 
 \section{Resumo Executivo de Custos}
 
-\begin{table}[h]
-\centering
+\begin{center}
 \small
-\begin{tabular}{ll}
+\begin{tabularx}{0.7\textwidth}{Y r}
+
 \toprule
-Categoria & Valor Consolidado (R\$) \\
+Categoria & Valor (R\$) \\
 \midrule
+
 Componentes Mecânicos & 400,00 \\
 Eletrônica de Potência e Processamento & 1.402,00 \\
 Aquisição de Sinais e Controle & 275,00 \\
 Insumos e Materiais & 340,00 \\
+
 \midrule
 \textbf{Subtotal} & \textbf{2.417,00} \\
 Margem de Contingência (20\%) & 483,40 \\
+
 \midrule
 \textbf{Custo Total Estimado} & \textbf{R\$ 2.900,40} \\
+
 \bottomrule
-\end{tabular}
-\end{table}
+
+\end{tabularx}
+\end{center}
 
 \section{Justificativas}
 
 \subsection{Justificativa do Projeto}
 
-O ATOM Chess é uma continuação do projeto \textit{ATOM Laboratory}, desenvolvido pelo Grupo de Iniciação Científica em Robótica e Visão Computacional do Centro Universitário Dom Helder Câmara em 2025. No primeiro ano, o grupo concentrou-se no projeto ATOM InMoov, cujo objetivo foi o desenvolvimento de um braço robótico humanoide para manipulação de objetos.
+O ATOM Chess é uma extensão do projeto \textit{ATOM Laboratory}, conduzido pelo Grupo de Iniciação Científica em Robótica e Visão Computacional do Centro Universitário Dom Helder Câmara no ano de 2025. Durante o primeiro ciclo de desenvolvimento, o grupo dedicou-se ao projeto ATOM InMoov, cujo propósito foi projetar e construir um braço robótico humanoide voltado à manipulação de objetos.
 
-Como resultado, foi construído um protótipo funcional, além da realização de estudos em visão computacional e da elaboração de um artigo científico atualmente em processo de submissão para a Revista Eletrônica de Iniciação Científica da Sociedade Brasileira de Computação.
+Esse trabalho resultou na construção de um protótipo funcional, bem como na realização de estudos experimentais em visão computacional aplicados ao controle do manipulador. Além disso, os resultados obtidos foram sistematizados em um artigo científico atualmente em processo de submissão à Revista Eletrônica de Iniciação Científica da Sociedade Brasileira de Computação.
 
-Dando continuidade a essa linha de pesquisa, o ATOM Chess tem como objetivo o desenvolvimento de um robô manipulador especializado para jogar xadrez, utilizando os conhecimentos adquiridos durante a construção do braço robótico humanoide.
-
-O sistema será capaz de reconhecer o estado do tabuleiro, identificar as peças e executar movimentos precisos, permitindo que o robô jogue de forma autônoma contra um oponente humano ou outro sistema de inteligência artificial.
+Em continuidade a essa linha de investigação, o ATOM Chess propõe o desenvolvimento de um robô manipulador dedicado à interação com um tabuleiro físico de xadrez. O projeto tem como objetivo integrar técnicas de robótica, controle de movimento e visão computacional para criar um sistema capaz de reconhecer peças no tabuleiro e executar movimentos de forma precisa, possibilitando a realização de partidas de xadrez contra o sistema robótico.
 
 \subsection{Justificativa Arquitetural}
 
 \textbf{Cinemática e Mecânica Estrutural.}
-A utilização de guias lineares retificados SAE 1045 H7 em conjunto com rolamentos LM10UU garante alta precisão e reduz folgas mecânicas. O uso de fusos axiais proporciona resolução adequada para deslocamentos no eixo vertical.
+
+A utilização de guias lineares retificados SAE 1045 H7 em conjunto com rolamentos LM10UU garante alta precisão e reduz folgas mecânicas.
 
 \textbf{Processamento e Potência.}
-A arquitetura separa domínios de potência e processamento. A fonte SMPS 12V/10A fornece corrente suficiente para motores de passo NEMA 17 e servos MG996R. O processamento de alto nível é realizado pelas SBCs Banana Pi M5 e Raspberry Pi Zero 2 W.
+
+A fonte SMPS 12V/10A fornece corrente suficiente para motores de passo NEMA 17 e servos MG996R.
 
 \textbf{Controle e Telemetria.}
-O driver PCA9685 permite geração de PWM via hardware utilizando barramento I2C. Conversores de nível lógico e o microcontrolador ESP32 garantem interfaceamento seguro entre níveis de tensão. Sensores ACS712 e a IMU MPU-6050 fornecem telemetria para monitoramento de corrente e comportamento espacial do robô.
+
+O driver PCA9685 permite geração de PWM via hardware utilizando barramento I2C.
 
 \textbf{Materiais de Fabricação.}
-O uso de PLA na manufatura aditiva permite prototipagem rápida e de baixo custo. O acrílico cast de 3mm será utilizado em elementos estruturais secundários.
 
+O uso de PLA permite prototipagem rápida e de baixo custo.
 \section*{Assinaturas}
+
+\begin{flushright}
+Belo Horizonte, 20 de março de 2026.
+\end{flushright}
+
+\vspace{2.5cm}
+
+\begin{center}
+
+\begin{tabular}{c}
+
+\rule{6cm}{0.4pt} \\
+
+Enzo Rocha Leite Diniz Ribas\\
+
+Coordenador do Projeto e
+Pesquisador \\
+
+\\[2.5cm]
+
+\rule{6cm}{0.4pt} \\
+
+Ricardo Luiz de Freitas \\
+
+Professor Coordenador e Orientador \\
+
+\end{tabular}
+
+\end{center}
 
 \vspace{2cm}
 
